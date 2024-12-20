@@ -18,7 +18,7 @@
 18|        <div class="author-links">
 19|            <a href="https://www.xiaohongshu.com/user/profile/6504ed2a0000000017023a23" target="_blank">史黛拉的仔仔（雅思版）</a>
 20|            <a href="https://www.xiaohongshu.com/user/profile/636f5629000000001f015be0" target="_blank">史黛拉的仔仔</a>
-21|            <a href="https://www.xiaohongshu.com/user/profile/5c159ace00000000060027bc" target="_blank">中年少女史黛拉（AP经济版）</a>
+21|            <a href="https://www.xiaohongshu.com/user/profile/5c159ace00000000060027bc" target="_blank">中年少女史黛拉（AP经���版）</a>
 22|        </div>
 23|    </div>
 24|</footer> 

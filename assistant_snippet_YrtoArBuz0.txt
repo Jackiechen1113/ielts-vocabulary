@@ -1,1 +1,20 @@
- 
+1|# 确保在项目文件夹中
+2|cd C:\Users\Jackie Chen\Documents\Test
+3|
+4|# 初始化 Git 仓库
+5|git init
+6|
+7|# 添加所有文件
+8|git add .
+9|
+10|# 提交更改
+11|git commit -m "Initial commit"
+12|
+13|# 设置分支为 main
+14|git branch -M main
+15|
+16|# 添加远程仓库
+17|git remote add origin https://github.com/jackiechen1113/ielts-vocabulary.git
+18|
+19|# 推送代码
+20|git push -u origin main 
