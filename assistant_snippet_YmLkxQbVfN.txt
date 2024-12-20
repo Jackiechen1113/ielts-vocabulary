@@ -1,0 +1,60 @@
+1|// 示例单词数据（实际应用中应该从后端获取）
+2|const words = [
+3|    { english: "Vocabulary", chinese: "词汇" },
+4|    { english: "Accomplish", chinese: "完成，实现" },
+5|    { english: "Determine", chinese: "决定，确定" },
+6|    // 添加更多单词...
+7|];
+8|
+9|// 创建一个随机排序的单词索引数组
+10|let wordIndexes = [];
+11|let currentIndex = 0;
+12|
+13|// 初始化单词索引数组并随机打乱
+14|function initializeWordIndexes() {
+15|    wordIndexes = Array.from({ length: words.length }, (_, i) => i);
+16|    shuffleArray(wordIndexes);
+17|}
+17|
+18|// Fisher-Yates 洗牌算法
+19|function shuffleArray(array) {
+20|    for (let i = array.length - 1; i > 0; i--) {
+21|        const j = Math.floor(Math.random() * (i + 1));
+22|        [array[i], array[j]] = [array[j], array[i]];
+23|    }
+24|    return array;
+25|}
+26|
+27|function showWord(index) {
+28|    const wordIndex = wordIndexes[index];
+29|    englishWordElement.textContent = words[wordIndex].english;
+30|    chineseMeaningElement.textContent = words[wordIndex].chinese;
+31|    chineseMeaningElement.classList.add('hidden');
+32|    
+33|    // 显示选择按钮
+34|    rememberButton.style.display = 'block';
+35|    forgetButton.style.display = 'block';
+36|    
+37|    timeLeft = 5;
+38|    startTimer();
+39|}
+40|
+41|function nextWord() {
+42|    currentIndex = (currentIndex + 1) % words.length;
+43|    // 如果到达数组末尾，重新洗牌
+44|    if (currentIndex === 0) {
+45|        shuffleArray(wordIndexes);
+46|    }
+47|    showWord(currentIndex);
+48|    
+49|    // 重新显示选择按钮
+50|    rememberButton.style.display = 'block';
+51|    forgetButton.style.display = 'block';
+52|    
+53|    // 隐藏中文含义
+54|    chineseMeaningElement.classList.add('hidden');
+55|}
+56|
+57|// 初始化
+58|initializeWordIndexes();
+59|showWord(currentIndex); 

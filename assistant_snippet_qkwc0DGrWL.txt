@@ -1,0 +1,67 @@
+/* 导航链接样式 */
+|.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+|.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+|.nav-link:hover {
+    background-color: #f5f6fa;
+    color: var(--primary-color);
+}
+
+/* 作者链接样式 */
+|.author-links {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+|.author-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    white-space: nowrap;  /* 防止文字换行 */
+}
+
+|.author-links a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* 响应式调整 */
+@media (max-width: 1200px) {
+    .author-links {
+        flex-direction: column;
+        margin: 1rem 0;
+        align-items: center;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .stats {
+        order: 2;
+    }
+    
+    .author-links {
+        order: 3;
+        width: 100%;
+    }
+} 

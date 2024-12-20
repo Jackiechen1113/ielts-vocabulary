@@ -1,0 +1,13 @@
+1|<header>
+2|    <nav>
+3|        <div class="logo">
+4|            <img src="C:/Users/Jackie Chen/Documents/Test/pic/pic1.jpg" alt="Logo" class="logo-img">
+5|            <span class="site-name">雅思单词速记</span>
+6|        </div>
+7|        <div class="nav-links">
+8|            <a href="https://www.xiaohongshu.com/user/profile/6504ed2a0000000017023a23" target="_blank" class="nav-link">史黛拉的仔仔（雅思版）</a>
+9|            <a href="https://www.xiaohongshu.com/user/profile/636f5629000000001f015be0" target="_blank" class="nav-link">史黛拉的仔仔</a>
+10|            <a href="https://www.xiaohongshu.com/user/profile/5c159ace00000000060027bc" target="_blank" class="nav-link">中年少女史黛拉（AP经济版）</a>
+11|        </div>
+12|    </nav>
+13|</header> 

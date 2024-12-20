@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅思单词速记</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="pic/pic1.jpg" alt="Logo" class="logo-img">
+                <span class="site-name">雅思单词速记</span>
+            </div>
+            <div class="stats">
+                <span class="remembered">记得: <span id="remembered-count">0</span></span>
+                <span class="forgotten">不记得: <span id="forgotten-count">0</span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <div class="word-container">
+                <div class="word-display">
+                    <h2 id="english-word">Vocabulary</h2>
+                    <div id="timer">5</div>
+                    <div class="button-group">
+                        <button id="remember-btn" class="remember">记得</button>
+                        <button id="forget-btn" class="forget">不记得</button>
+                    </div>
+                    <p id="chinese-meaning" class="hidden">词汇</p>
+                </div>
+            </div>
+            
+            <div class="forgotten-words-container">
+                <h3>需要复习的单词</h3>
+                <div class="forgotten-words-list" id="forgotten-words-list">
+                    <!-- 这里会通过JavaScript动态添加内容 -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="author-info">
+        <a href="https://www.xiaohongshu.com/user/profile/636f5629000000001f015be0?xsec_token=YBMCLyj_lEwomk55gLodk6AsQoqdpLprnrkvi0-Lt4Zt8=&xsec_source=app_share&xhsshare=CopyLink&appuid=60a32f9000000000010030e0&apptime=1734708723&share_id=9f984ede464346a9b30bac37dd28f7ab" target="_blank">
+            <img src="pic/pic2.jpg" alt="史黛拉的仔仔" class="author-avatar">
+            <span class="author-name">史黛拉的仔仔</span>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 雅思单词速记. 保留所有权利</p>
+            <div class="footer-links">
+                <a href="#">隐私政策</a>
+                <a href="#">使用条款</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,337 @@
+:root {
+    --primary-color: #4a90e2;
+    --background-color: #f5f6fa;
+    --text-color: #2d3436;
+    --button-color: #4a90e2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* 导航栏样式 */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* 主要内容区域 */
+.word-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.word-display {
+    text-align: center;
+}
+
+#english-word {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+#timer {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #666;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 120px;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+#chinese-meaning {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 底部样式 */
+footer {
+    background-color: white;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .word-container {
+        margin: 2rem 1rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+} 
+
+/* 添加计数器样式 */
+.stats {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.remembered {
+    color: #27ae60;  /* 绿色 */
+}
+
+.forgotten {
+    color: #e74c3c;  /* 改为红色 */
+}
+
+/* 按钮组样式 */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.remember {
+    background-color: #27ae60;
+}
+
+.remember:hover {
+    background-color: #219a52;
+}
+
+.forget {
+    background-color: #e74c3c;  /* 改为红色 */
+}
+
+.forget:hover {
+    background-color: #c0392b;  /* 深红色 */
+}
+
+/* 修改原有按钮样式 */
+button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 120px;
+}
+
+/* 添加内容包装器样式 */
+.content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.word-container {
+    flex: 1;
+    margin: 4rem 0;
+}
+
+/* 右侧列表样式 */
+.forgotten-words-container {
+    width: 300px;
+    margin: 4rem 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.forgotten-words-container h3 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f1f2f6;
+}
+
+.forgotten-words-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.forgotten-word-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #f1f2f6;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.forgotten-word-item span {
+    display: inline;
+}
+
+.forgotten-word-item .word-number {
+    color: #666;
+    font-size: 0.9rem;
+    width: 24px;
+    flex-shrink: 0;
+}
+
+.forgotten-word-item .word-english {
+    color: #e74c3c;
+    font-weight: 500;
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.forgotten-word-item .word-chinese {
+    color: #666;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+/* 响应式调整 */
+@media (max-width: 968px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .forgotten-words-container {
+        width: 100%;
+        margin: 0 0 4rem 0;
+    }
+}
+
+.author-info {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.author-info:hover {
+    transform: translateY(-5px);
+}
+
+.author-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+.author-name {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.author-info a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 确保在移动设备上也能正常显示 */
+@media (max-width: 768px) {
+    .author-info {
+        right: 10px;
+        bottom: 10px;
+    }
+    
+    .author-avatar {
+        width: 60px;  /* 在移动端稍微小一点 */
+        height: 60px;
+    }
+    
+    .author-name {
+        font-size: 12px;
+    }
+}

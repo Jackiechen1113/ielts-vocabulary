@@ -1,0 +1,42 @@
+1|/* 修改底部样式 */
+2|footer {
+3|    background-color: white;
+4|    padding: 2rem;
+5|    margin-top: 4rem;
+6|}
+7|
+8|.footer-content {
+9|    max-width: 1200px;
+10|    margin: 0 auto;
+11|    padding: 2rem;
+12|    display: flex;
+13|    flex-direction: column;
+14|    align-items: center;
+15|    gap: 1.5rem;
+16|}
+17|
+18|.copyright {
+19|    color: #666;
+20|}
+21|
+22|.author-links {
+23|    display: flex;
+24|    gap: 1rem;
+25|    flex-wrap: wrap;
+26|    justify-content: center;
+27|}
+28|
+29|.author-links a {
+30|    text-decoration: none;
+31|    color: #000;  /* 改为黑色 */
+32|    font-size: 0.9rem;
+33|    padding: 0.5rem 1rem;
+34|    border: 1px solid #000;  /* 边框也改为黑色 */
+35|    border-radius: 5px;
+36|    transition: all 0.3s ease;
+37|}
+38|
+39|.author-links a:hover {
+40|    background-color: #000;  /* 悬停背景改为黑色 */
+41|    color: white;
+42|} 

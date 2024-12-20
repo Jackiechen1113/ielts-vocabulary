@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #4a90e2;
+    --background-color: #f5f6fa;
+    --text-color: #2d3436;
+    --button-color: #4a90e2;
+}
+
+/* ... 其他样式保持不变 ... */
+
+/* 更新底部样式 */
+footer {
+    background-color: white;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.copyright {
+    color: #666;
+}
+
+.author-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.author-links a {
+    text-decoration: none;
+    color: #000;  /* 改为黑色 */
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;  /* 边框也改为黑色 */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.author-links a:hover {
+    background-color: #000;  /* 悬停背景改为黑色 */
+    color: white;
+} 
